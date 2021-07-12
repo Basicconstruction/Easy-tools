@@ -1,0 +1,11 @@
+*.apk
+*.iml
+.gradle
+/local.properties
+/.idea/*
+.idea/*
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+app/src/main/java/com/randomappsinc/foodjournal/API/YelpToken.java

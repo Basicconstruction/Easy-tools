@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/no_dishes"
+        android:text="@string/no_restaurant_dishes"
+        style="@style/no_content"/>
+
+    <GridView
+        android:id="@+id/dishes_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:padding="4dp"
+        android:clipToPadding="false"/>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/theater_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage, RtlHardcoded">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pictures_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/close"
+        android:layout_alignParentLeft="true"
+        android:text="@string/close_icon"
+        android:textSize="32dp"
+        style="@style/full_view_toolbar_button"/>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/share"
+        android:layout_alignParentRight="true"
+        android:text="@string/share_icon"
+        android:textSize="28dp"
+        style="@style/full_view_toolbar_button"/>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/edit"
+        android:layout_toLeftOf="@id/share"
+        android:text="@string/edit_icon"
+        android:textSize="28dp"
+        style="@style/full_view_toolbar_button"/>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/favorite_toggle"
+        android:layout_toLeftOf="@id/edit"
+        android:textSize="28dp"
+        style="@style/full_view_toolbar_button"/>
+</RelativeLayout>

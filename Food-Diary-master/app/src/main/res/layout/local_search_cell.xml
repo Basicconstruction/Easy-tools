@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    tools:ignore="ContentDescription, SpUsage, RtlHardcoded"
+    style="@style/search_card">
+
+    <RelativeLayout
+        android:id="@+id/result_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/search_result_picture"
+            style="@style/search_result_image"/>
+
+        <TextView
+            android:id="@+id/search_result_text"
+            style="@style/search_result_text"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_results_text"
+        style="@style/search_no_results_text"/>
+</androidx.cardview.widget.CardView>

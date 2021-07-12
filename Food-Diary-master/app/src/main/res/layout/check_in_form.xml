@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/save"
+            android:text="@string/save"
+            android:layout_alignParentBottom="true"
+            style="@style/button"/>
+
+        <ScrollView
+            android:layout_above="@id/save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/check_in_form_padding">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/restaurant_info_section"
+                    card_view:contentPadding="0dp"
+                    style="@style/form_card">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/base_restaurant_cell"/>
+
+                        <TextView
+                            android:id="@+id/choose_restaurant_prompt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:textSize="17sp"
+                            android:textColor="@color/gray"
+                            android:text="@string/check_in_location_prompt"/>
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/form_card">
+                    <EditText
+                        android:id="@+id/experience_input"
+                        android:hint="@string/check_in_prompt"
+                        android:minLines="3"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapSentences|textMultiLine"
+                        style="@style/form_input"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/form_card">
+                    <TextView
+                        android:id="@+id/date_input"
+                        android:textColor="@color/dark_gray"
+                        style="@style/form_input"/>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dish_form_card_spacing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tag_dish"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        style="@style/form_card">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.joanzapata.iconify.widget.IconTextView
+                                android:layout_marginTop="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center_horizontal"
+                                android:text="@string/tagging_icon"
+                                android:textColor="@color/app_red"
+                                android:textSize="47dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:text="@string/tag_dishes"
+                                android:textColor="@color/app_red"
+                                android:textSize="15dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tagged_dishes"
+                        style="@style/horizontal_gallery"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

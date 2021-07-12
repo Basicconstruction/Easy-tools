@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dish_page_title">Dish</string>
+    <string name="dish_icon">{ion-pizza}</string>
+
+    <string name="dish_name_voice_hint">Tell us what this dish is named.</string>
+    <string name="dish_name_hint">What is this dish called?</string>
+    <string name="dish_restaurant_prompt">Where did you get it?</string>
+    <string name="dish_description_prompt">Anything else you want to say?</string>
+
+    <string name="blank_star">{ion-android-star-outline}</string>
+    <string name="filled_star">{ion-android-star}</string>
+    <string name="red_filled_star">{ion-android-star @color/app_red}</string>
+
+    <string name="dish_title_needed">Please tell us what this dish was called.</string>
+    <string name="dish_restaurant_needed">Please tell us where you ate this dish.</string>
+
+    <string name="confirm_dish_exit">Confirm Dish Form Exit</string>
+
+    <string name="no_homepage_dishes">
+        Use the {ion-android-camera} or the {ion-android-folder} button to add your first dish!
+    </string>
+    <string name="no_restaurant_dishes">You have no dishes tagged to this restaurant.</string>
+    
+    <string name="confirm_dish_delete_title">Confirm Dish Deletion</string>
+    <string name="confirm_dish_delete">Are you sure you want to delete this dish?</string>
+
+    <string name="dish_tagger">Dish Tagger</string>
+    <string name="dish_tagger_header">
+        Showing dishes from %1$s posted within 24 hours of your check-in time of %2$s.
+    </string>
+    <string name="tag_dishes">Tag Dishes</string>
+    <string name="tag_with_number">Tag (%d)</string>
+    <string name="no_dishes_to_tag">No dishes to display.</string>
+
+    <string name="dish_title">%1$s @ %2$s</string>
+
+    <string name="share_dish">Share dish</string>
+    <string name="edit_dish">Edit dish</string>
+    <string name="delete_dish">Delete dish</string>
+    <string-array name="dish_options">
+        <item>@string/share_dish</item>
+        <item>@string/edit_dish</item>
+        <item>@string/delete_dish</item>
+    </string-array>
+
+    <string name="favorited_dishes_protected">You can\'t delete dishes that you have favorited.</string>
+
+    <string-array name="dish_photo_options">
+        <item>View full photo</item>
+        <item>Retake with camera</item>
+        <item>Reupload from gallery</item>
+    </string-array>
+
+    <string name="take_photo_with_camera_failed">
+        Sorry, we are unable to process your device\'s camera photos.
+    </string>
+</resources>

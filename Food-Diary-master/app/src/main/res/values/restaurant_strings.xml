@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="one_dish_attached">1 dish attached</string>
+    <string name="num_dishes_attached">%d dishes attached</string>
+    <string name="restaurant_deleted">Restaurant deleted.</string>
+
+    <!-- Find restaurant -->
+    <string name="find_restaurant">Find Restaurant</string>
+    <string name="search">Search</string>
+    <string name="clear_icon">{ion-android-close}</string>
+    <string name="no_restaurants_found">No restaurants match your input.</string>
+    <string name="powered_by_yelp">Powered by Yelp</string>
+
+    <!-- Restaurant view -->
+    <string name="restaurant_view">Restaurant View</string>
+    <string name="dishes">Dishes</string>
+    <string-array name="restaurant_tabs">
+        <item>@string/dishes</item>
+        <item>@string/check_ins</item>
+    </string-array>
+
+    <string name="confirm_restaurant_deletion_title">Confirm Restaurant Deletion</string>
+    <string name="confirm_restaurant_deletion">
+        Are you sure you want to delete this restaurant?
+        All of your attached dishes and check-ins will be deleted too.
+    </string>
+
+    <string name="navigate_to_restaurant">Navigate to restaurant</string>
+    <string name="navigate_with">Navigate with</string>
+    <string name="call_restaurant">Call restaurant</string>
+    <string name="call_with">Call with</string>
+</resources>
