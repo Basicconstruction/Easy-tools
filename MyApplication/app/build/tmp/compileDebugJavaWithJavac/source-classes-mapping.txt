@@ -1,0 +1,4 @@
+cn/basicconstruction/cn/MainActivity.java
+ cn.basicconstruction.cn.MainActivity
+cn/basicconstruction/cn/BuildConfig.java
+ cn.basicconstruction.cn.BuildConfig
